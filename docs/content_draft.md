@@ -1,6 +1,6 @@
 # 【随時更新】コピペで使える業務効率化Pythonスクリプト全集
 
-*Last Updated: 2026/01/22*
+*Last Updated: 2026/01/22 (Tool #03 Added)*
 
 こんにちわ。
 「退屈な作業はすべてPythonにやらせる」をモットーに、日々自動化スクリプトを書き溜めています。
@@ -39,6 +39,15 @@
 *   **活用例**: ニュースの動画化、名言bot運用
 *   **使い方**: `python src/02_text_to_video/generator.py`
     *Pinterest用の縦長動画(9:16)にも対応しました！*
+
+---
+
+### 03. Instagram Auto Liker
+指定したハッシュタグの投稿を自動で「いいね」していくツールです。Seleniumを使ってブラウザを自動操作します。
+
+*   **活用例**: アカウントの認知拡大、フォロワー増加
+*   **使い方**: `python src/03_instagram_auto_like/auto_like.py --username "user" --password "pass" --hashtag "python"`
+    *BAN対策として、ランダムな待機時間を設けています。*
 
 ---
 
