@@ -66,16 +66,40 @@ def generate_video(text, title_color="#333333", bg_color="#ffffff", is_vertical=
         print(f"❌ Rendering failed: {e}")
 
 if __name__ == "__main__":
-    print("--- Text-to-Video Generator ---")
-    user_text = input("Enter text (use \\n for new lines): ").replace("\\n", "\n")
-    if not user_text:
-        user_text = "Hello World"
-        
-    user_bg = input("Background Color (hex, default #ffffff): ")
-    if not user_bg:
-        user_bg = "#ffffff"
+    import argparse
 
-    format_in = input("Vertical format for Pinterest? (y/n, default n): ").lower()
-    vertical = format_in == 'y'
+    parser = argparse.ArgumentParser(description="Generate text-to-video")
+    parser.add_argument("--text", type=str, help="Text to display (use \\n for newlines)")
+    parser.add_argument("--bg", type=str, default="#ffffff", help="Background color hex")
+    parser.add_argument("--vertical", action="store_true", help="Generate vertical video (9:16)")
+    parser.add_argument("--interactive", action="store_true", help="Use interactive mode")
 
-    generate_video(user_text, bg_color=user_bg, is_vertical=vertical)
+    args = parser.parse_args()
+
+    if args.interactive:
+        print("--- Text-to-Video Generator ---")
+        user_text = input("Enter text (use \\n for new lines): ").replace("\\n", "\n")
+        if not user_text:
+            user_text = "Hello World"
+            
+        user_bg = input("Background Color (hex, default #ffffff): ")
+        if not user_bg:
+            user_bg = "#ffffff"
+
+        format_in = input("Vertical format for Pinterest? (y/n, default n): ").lower()
+        vertical = format_in == 'y'
+
+        generate_video(user_text, bg_color=user_bg, is_vertical=vertical)
+    else:
+        if not args.text:
+            print("--- Text-to-Video Generator (Interactive) ---")
+            print("Tip: Use --text 'Foo' --vertical to skip prompts.")
+            user_text = input("Enter text (use \\n for new lines): ").replace("\\n", "\n")
+            if not user_text:
+                user_text = "Hello World"
+            user_bg = input("Background Color (hex, default #ffffff): ") or "#ffffff"
+            format_in = input("Vertical format for Pinterest? (y/n, default n): ").lower()
+            generate_video(user_text, bg_color=user_bg, is_vertical=(format_in == 'y'))
+        else:
+            text_clean = args.text.replace("\\n", "\n")
+            generate_video(text_clean, bg_color=args.bg, is_vertical=args.vertical)

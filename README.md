@@ -37,6 +37,7 @@
 | :--- | :--- | :--- |
 | 01 | [Google Maps Leads Scraper](./src/01_google_maps_leads/) | キーワードとエリアから店名・電話番号・住所・地図URLを収集し、Excelに保存します。 |
 | 02 | [Text-to-Video Generator](./src/02_text_to_video/) | テキストを入力すると、アニメーション付きのショート動画（MP4）を自動生成します。(要Node.js) |
+| 03 | [Instagram Auto Liker](./src/03_instagram_auto_like/) | 指定したハッシュタグの投稿を自動で「いいね」します。Selenium使用。 |
 
 ---
 
