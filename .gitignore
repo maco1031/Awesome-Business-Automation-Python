@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+
+# Output
+leads_*.xlsx
+output_*.mp4
+*.log
+
+# Sensitive
+.env
