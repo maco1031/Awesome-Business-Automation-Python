@@ -24,10 +24,10 @@
 > VPSなら**静的IP**が持てるため、自宅IPを守りながら安全に自動化が可能です。
 >
 > **【推奨環境】 (動作確認済み)**
+> - **Xserver VPS**: 圧倒的スペックと安定性。大規模なスクレイピングならこちら。(※おすすめ)
+>   - [👉 Xserver VPS 公式サイト](https://px.a8.net/svt/ejp?a8mat=4AVB46+81COS2+CO4+25ES2Q)
 > - **ConoHa VPS**: 初心者に優しく、初期費用も安い。
->   - [👉 ConoHa VPS 公式サイト](https://px.a8.net/svt/ejp?a8mat=4AVB46+81COS2+CO4+25EKCY)
-> - **Xserver VPS**: 圧倒的スペックと安定性。大規模なスクレイピングならこちら。
->   - [👉 Xserver VPS 公式サイト](https://px.a8.net/svt/ejp?a8mat=4AVB46+81COS2+CO4+25EKCY)
+>   - [👉 ConoHa VPS 公式サイト](https://www.conoha.jp/vps/) (申請中)
 
 ---
 

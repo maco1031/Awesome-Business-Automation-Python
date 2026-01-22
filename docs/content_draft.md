@@ -19,8 +19,8 @@
 ビジネスとして安定稼働させる場合、月額数百円で使える**VPS（仮想専用サーバー）**の利用を強く推奨します。
 私は以下の環境で動作確認をしています。
 
-*   **ConoHa VPS**: [リンク] (初心者おすすめ)
-*   **Xserver VPS**: [リンク] (ハイパフォーマンス)
+*   **Xserver VPS**: [こちらは最強スペック](https://px.a8.net/svt/ejp?a8mat=4AVB46+81COS2+CO4+25ES2Q) (推奨)
+*   **ConoHa VPS**: [公式サイト](https://www.conoha.jp/vps/) (初心者向け)
 
 ---
 

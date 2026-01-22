@@ -14,9 +14,16 @@
 **「テキスト」で検索流入を稼ぐための母艦です。**
 - **URL (Note)**: [https://note.com/](https://note.com/) (一般向け)
 - **URL (Zenn)**: [https://zenn.dev/](https://zenn.dev/) (エンジニア向け)
-- **設定**:
-  - 1記事だけ投稿する（内容は `docs/content_draft.md` をコピペ）。
-  - **重要**: 記事の最後に必ずアフィリエイトリンクを貼る。
+- **設定 (共通)**:
+  - **名前**: 「Python業務効率化ラボ」 (Pinterestと統一してブランディング)
+  - **ID**: `python_auto_lab` など、信頼感のある英数字。
+  - **プロフィール文 (コピペ用)**:
+    > 【月200時間削減】「コピペで動く業務自動化スクリプト」を無料公開中。
+    > 退屈な作業は全てPythonにやらせましょう。
+    > ▼ソースコード(GitHub)
+    > https://github.com/maco1031/Awesome-Business-Automation-Python
+  - **ヘッダー画像**: Pinterestと同じものを使用し、統一感を出す。
+  - **1記事目を投稿**: `docs/content_draft.md` をコピペして投稿。記事の末尾に必ずアフィリエイトリンクがあるか確認。
 
 ## 3. ASP (アフィリエイト)
 **マネタイズの命綱です。**
