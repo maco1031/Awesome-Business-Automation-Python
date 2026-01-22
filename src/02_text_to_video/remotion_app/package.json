@@ -1,0 +1,23 @@
+{
+    "name": "video-generator",
+    "version": "1.0.0",
+    "description": "Remotion project for text-to-video generation",
+    "scripts": {
+        "start": "remotion preview src/index.ts",
+        "build": "remotion render src/index.ts HelloWorld out/video.mp4",
+        "upgrade": "remotion upgrade",
+        "test": "eslint src --ext ts,tsx && tsc"
+    },
+    "dependencies": {
+        "remotion": "4.0.0",
+        "react": "^18.0.0",
+        "react-dom": "^18.0.0"
+    },
+    "devDependencies": {
+        "@types/react": "^18.0.0",
+        "@types/web": "^0.0.86",
+        "eslint": "^8.0.0",
+        "prettier": "^3.0.0",
+        "typescript": "^5.0.0"
+    }
+}
