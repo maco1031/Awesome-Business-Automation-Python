@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>leads_1769059277.xlsx - Excel</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background-color: #f0f0f0;
+            overflow: hidden; /* Prevent body scroll, use inner scroll */
+        }
+        .excel-header {
+            background-color: #217346;
+            color: white;
+            padding: 8px 15px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+        }
+        .excel-toolbar {
+            background-color: #f3f2f1;
+            border-bottom: 1px solid #e1dfdd;
+            padding: 5px;
+            height: 30px;
+        }
+        .sheet-container {
+            background: white;
+            height: calc(100vh - 70px);
+            overflow: auto;
+            position: relative;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            table-layout: fixed;
+        }
+        th, td {
+            border: 1px solid #d4d4d4;
+            padding: 4px 8px;
+            font-size: 13px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            height: 20px;
+        }
+        th {
+            background-color: #f8f9fa;
+            color: #666;
+            font-weight: normal;
+            text-align: center;
+        }
+        /* Column Widths */
+        th:nth-child(1) { width: 40px; background-color: #f8f9fa; border-right: 2px solid #ccc; } /* Row Number Header */
+        th:nth-child(2) { width: 250px; } /* Name */
+        th:nth-child(3) { width: 150px; } /* Search Query */
+        th:nth-child(4) { width: 400px; } /* Link */
+        
+        td:nth-child(1) {
+            background-color: #f8f9fa;
+            text-align: center;
+            color: #666;
+            border-right: 2px solid #ccc;
+        }
+        
+        tr:hover td:not(:first-child) {
+            background-color: #e6f2ea; /* Excel selection color */
+        }
+    </style>
+</head>
+<body>
+    <div class="excel-header">
+        <span>💾</span>&nbsp;&nbsp;leads_1769059277.xlsx - Excel
+    </div>
+    <div class="excel-toolbar">
+        <!-- Mock toolbar -->
+        <span style="color:#666; font-size:12px; margin-left:10px;">File | Home | Insert | Page Layout | Formulas | Data | Review | View</span>
+    </div>
+
+    <div class="sheet-container">
+        <table>
+            <thead>
+                <tr>
+                    <th></th> <!-- Corner -->
+                    <th>A</th>
+                    <th>B</th>
+                    <th>C</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td style="font-weight:bold;">Name</td>
+                    <td style="font-weight:bold;">Search Query</td>
+                    <td style="font-weight:bold;">Link</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>コトカフェ</td>
+                    <td>新宿 カフェ</td>
+                    <td style="color:blue; text-decoration:underline;">https://www.google.com/maps/place/%E3%82%B3%E3%83%88%E3%82%AB%E3%83%95%E3%82%A7/data=!4m7!3m6!1s0x60188cdbf2350001:0xb491223855323212!8m2!3d35.6930835!4d139.70596!16s%2Fg%2F11bw5x9nq7!19sChIJAQA18tuMGGAREjIyVTgikbQ?authuser=0&hl=ja&rclk=1</td>
+                </tr>
+    
+                <tr>
+                    <td>3</td>
+                    <td>Paul Bassett 新宿</td>
+                    <td>新宿 カフェ</td>
+                    <td style="color:blue; text-decoration:underline;">https://www.google.com/maps/place/Paul+Bassett+%E6%96%B0%E5%AE%BF/data=!4m7!3m6!1s0x60188cd5c3afab13:0xbe8fa7e4d4a43107!8m2!3d35.6928297!4d139.6951042!16s%2Fg%2F1tmpdy2y!19sChIJE6uvw9WMGGARBzGk1OSnj74?authuser=0&hl=ja&rclk=1</td>
+                </tr>
+    
+                <tr>
+                    <td>4</td>
+                    <td>breath cafe</td>
+                    <td>新宿 カフェ</td>
+                    <td style="color:blue; text-decoration:underline;">https://www.google.com/maps/place/breath+cafe/data=!4m7!3m6!1s0x60188cdc9c4265bb:0xedc140b3648dc4fd!8m2!3d35.6912236!4d139.7067201!16s%2Fg%2F1tdclz3p!19sChIJu2VCnNyMGGAR_cSNZLNAwe0?authuser=0&hl=ja&rclk=1</td>
+                </tr>
+    
+                <tr>
+                    <td>5</td>
+                    <td>cafe AALIYA</td>
+                    <td>新宿 カフェ</td>
+                    <td style="color:blue; text-decoration:underline;">https://www.google.com/maps/place/cafe+AALIYA/data=!4m7!3m6!1s0x60188cdb110f51e5:0x1a011438f4c23010!8m2!3d35.690497!4d139.7047727!16s%2Fg%2F11b778q5jl!19sChIJ5VEPEduMGGAREDDC9DgUARo?authuser=0&hl=ja&rclk=1</td>
+                </tr>
+    
+                <tr>
+                    <td>6</td>
+                    <td>Brooklyn Parlor SHINJUKU</td>
+                    <td>新宿 カフェ</td>
+                    <td style="color:blue; text-decoration:underline;">https://www.google.com/maps/place/Brooklyn+Parlor+SHINJUKU/data=!4m7!3m6!1s0x60188cdb16eab7d9:0x9d12545a646c5542!8m2!3d35.6901472!4d139.7058975!16s%2Fg%2F11c20swdy4!19sChIJ2bfqFtuMGGARQlVsZFpUEp0?authuser=0&hl=ja&rclk=1</td>
+                </tr>
+    
+                <tr>
+                    <td>7</td>
+                    <td>カフェウォール</td>
+                    <td>新宿 カフェ</td>
+                    <td style="color:blue; text-decoration:underline;">https://www.google.com/maps/place/%E3%82%AB%E3%83%95%E3%82%A7%E3%82%A6%E3%82%A9%E3%83%BC%E3%83%AB/data=!4m7!3m6!1s0x60188cdc9b5e2e0b:0x3a265dfa8e56debd!8m2!3d35.6913429!4d139.7067713!16s%2Fg%2F11b6msn7m6!19sChIJCy5em9yMGGARvd5WjvpdJjo?authuser=0&hl=ja&rclk=1</td>
+                </tr>
+    
+                <tr>
+                    <td>8</td>
+                    <td>Caffice</td>
+                    <td>新宿 カフェ</td>
+                    <td style="color:blue; text-decoration:underline;">https://www.google.com/maps/place/Caffice/data=!4m7!3m6!1s0x60188cdac56e0a91:0xe1f465f0bf1afe01!8m2!3d35.688716!4d139.703024!16s%2Fg%2F11bwkgk45s!19sChIJkQpuxdqMGGARAf4av_Bl9OE?authuser=0&hl=ja&rclk=1</td>
+                </tr>
+    
+                <tr>
+                    <td>9</td>
+                    <td>オールシーズンズコーヒー新宿店</td>
+                    <td>新宿 カフェ</td>
+                    <td style="color:blue; text-decoration:underline;">https://www.google.com/maps/place/%E3%82%AA%E3%83%BC%E3%83%AB%E3%82%B7%E3%83%BC%E3%82%BA%E3%83%B3%E3%82%BA%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC%E6%96%B0%E5%AE%BF%E5%BA%97/data=!4m7!3m6!1s0x60188cc336f1aaab:0x5bcaee243b3e7f2a!8m2!3d35.6897966!4d139.7079209!16s%2Fg%2F11bx1q8qhr!19sChIJq6rxNsOMGGARKn8-OyTuyls?authuser=0&hl=ja&rclk=1</td>
+                </tr>
+    
+                <tr>
+                    <td>10</td>
+                    <td>カフェアルル新宿</td>
+                    <td>新宿 カフェ</td>
+                    <td style="color:blue; text-decoration:underline;">https://www.google.com/maps/place/%E3%82%AB%E3%83%95%E3%82%A7%E3%82%A2%E3%83%AB%E3%83%AB%E6%96%B0%E5%AE%BF/data=!4m7!3m6!1s0x60188cdc58f91b81:0x1b83e380afb65f32!8m2!3d35.6926396!4d139.7082278!16s%2Fg%2F1thvgy9d!19sChIJgRv5WNyMGGARMl-2r4Djgxs?authuser=0&hl=ja&rclk=1</td>
+                </tr>
+    
+                <tr>
+                    <td>11</td>
+                    <td>名曲•珈琲 新宿らんぶる</td>
+                    <td>新宿 カフェ</td>
+                    <td style="color:blue; text-decoration:underline;">https://www.google.com/maps/place/%E5%90%8D%E6%9B%B2%E2%80%A2%E7%8F%88%E7%90%B2+%E6%96%B0%E5%AE%BF%E3%82%89%E3%82%93%E3%81%B6%E3%82%8B/data=!4m7!3m6!1s0x60188cdb01e97e91:0x1faa7dea16f28f27!8m2!3d35.6905887!4d139.7039597!16s%2Fg%2F1thw2445!19sChIJkX7pAduMGGARJ4_yFup9qh8?authuser=0&hl=ja&rclk=1</td>
+                </tr>
+    
+                <tr>
+                    <td>12</td>
+                    <td>kawara CAFE＆DINING 新宿東口店</td>
+                    <td>新宿 カフェ</td>
+                    <td style="color:blue; text-decoration:underline;">https://www.google.com/maps/place/kawara+CAFE%EF%BC%86DINING+%E6%96%B0%E5%AE%BF%E6%9D%B1%E5%8F%A3%E5%BA%97/data=!4m7!3m6!1s0x60188cd7610fb9f1:0xb337617ad1ed01c4!8m2!3d35.6933657!4d139.701169!16s%2Fg%2F1tf7mk8x!19sChIJ8bkPYdeMGGARxAHt0XphN7M?authuser=0&hl=ja&rclk=1</td>
+                </tr>
+    
+                <tr>
+                    <td>13</td>
+                    <td>Cafe＆Meal MUJI 新宿</td>
+                    <td>新宿 カフェ</td>
+                    <td style="color:blue; text-decoration:underline;">https://www.google.com/maps/place/Cafe%EF%BC%86Meal+MUJI+%E6%96%B0%E5%AE%BF/data=!4m7!3m6!1s0x60188dc4bde64c8d:0x6199b3ee7daebc02!8m2!3d35.6927008!4d139.7036623!16s%2Fg%2F11s3vrq8cc!19sChIJjUzmvcSNGGARAryufe6zmWE?authuser=0&hl=ja&rclk=1</td>
+                </tr>
+    
+                <tr>
+                    <td>14</td>
+                    <td>cafe terrasse シルエット</td>
+                    <td>新宿 カフェ</td>
+                    <td style="color:blue; text-decoration:underline;">https://www.google.com/maps/place/cafe+terrasse+%E3%82%B7%E3%83%AB%E3%82%A8%E3%83%83%E3%83%88/data=!4m7!3m6!1s0x60188cd6d975c5d5:0x6a23d1c7c66c444f!8m2!3d35.6903345!4d139.6984698!16s%2Fg%2F1tdgk7r6!19sChIJ1cV12daMGGART0RsxsfRI2o?authuser=0&hl=ja&rclk=1</td>
+                </tr>
+    
+                <tr>
+                    <td>15</td>
+                    <td>但馬屋珈琲店本店</td>
+                    <td>新宿 カフェ</td>
+                    <td style="color:blue; text-decoration:underline;">https://www.google.com/maps/place/%E4%BD%86%E9%A6%AC%E5%B1%8B%E7%8F%88%E7%90%B2%E5%BA%97%E6%9C%AC%E5%BA%97/data=!4m7!3m6!1s0x60188cd716664cb5:0x486bbc4f647d46ff!8m2!3d35.6926738!4d139.6997103!16s%2Fg%2F1tf28p9y!19sChIJtUxmFteMGGAR_0Z9ZE-8a0g?authuser=0&hl=ja&rclk=1</td>
+                </tr>
+    
+                <tr>
+                    <td>16</td>
+                    <td>スコップカフェ</td>
+                    <td>新宿 カフェ</td>
+                    <td style="color:blue; text-decoration:underline;">https://www.google.com/maps/place/%E3%82%B9%E3%82%B3%E3%83%83%E3%83%97%E3%82%AB%E3%83%95%E3%82%A7/data=!4m7!3m6!1s0x60188cdc9eb3a197:0xf40b9e99b4ef4d06!8m2!3d35.6895741!4d139.7072158!16s%2Fg%2F1tdsjsc5!19sChIJl6GzntyMGGARBk3vtJmeC_Q?authuser=0&hl=ja&rclk=1</td>
+                </tr>
+    
+                <tr>
+                    <td>17</td>
+                    <td>珈琲タイムス</td>
+                    <td>新宿 カフェ</td>
+                    <td style="color:blue; text-decoration:underline;">https://www.google.com/maps/place/%E7%8F%88%E7%90%B2%E3%82%BF%E3%82%A4%E3%83%A0%E3%82%B9/data=!4m7!3m6!1s0x60188cda8a4d3121:0x72131e29422017b2!8m2!3d35.69022!4d139.7024505!16s%2Fg%2F1wk4d18c!19sChIJITFNitqMGGARshcgQikeE3I?authuser=0&hl=ja&rclk=1</td>
+                </tr>
+    
+                <tr>
+                    <td>18</td>
+                    <td>カフェラヴォワ</td>
+                    <td>新宿 カフェ</td>
+                    <td style="color:blue; text-decoration:underline;">https://www.google.com/maps/place/%E3%82%AB%E3%83%95%E3%82%A7%E3%83%A9%E3%83%B4%E3%82%A9%E3%83%AF/data=!4m7!3m6!1s0x60188cd3fe0d682b:0xc1bea81d833028be!8m2!3d35.6897382!4d139.6961738!16s%2Fg%2F1tgn9m53!19sChIJK2gN_tOMGGARvigwgx2ovsE?authuser=0&hl=ja&rclk=1</td>
+                </tr>
+    
+                <tr>
+                    <td>19</td>
+                    <td>カフェ・ベローチェ 西新宿店</td>
+                    <td>新宿 カフェ</td>
+                    <td style="color:blue; text-decoration:underline;">https://www.google.com/maps/place/%E3%82%AB%E3%83%95%E3%82%A7%E3%83%BB%E3%83%99%E3%83%AD%E3%83%BC%E3%83%81%E3%82%A7+%E8%A5%BF%E6%96%B0%E5%AE%BF%E5%BA%97/data=!4m7!3m6!1s0x60188cd644776689:0xcc6a245a5d630cbe!8m2!3d35.6937815!4d139.6978465!16s%2Fg%2F1ptyglsth!19sChIJiWZ3RNaMGGARvgxjXVokasw?authuser=0&hl=ja&rclk=1</td>
+                </tr>
+    
+                <tr>
+                    <td>20</td>
+                    <td>椿屋珈琲 新宿茶寮</td>
+                    <td>新宿 カフェ</td>
+                    <td style="color:blue; text-decoration:underline;">https://www.google.com/maps/place/%E6%A4%BF%E5%B1%8B%E7%8F%88%E7%90%B2+%E6%96%B0%E5%AE%BF%E8%8C%B6%E5%AF%AE/data=!4m7!3m6!1s0x60188cda653f599f:0x3922c4853307d46a!8m2!3d35.6906346!4d139.7020481!16s%2Fg%2F1vr1wmk0!19sChIJn1k_ZdqMGGARatQHM4XEIjk?authuser=0&hl=ja&rclk=1</td>
+                </tr>
+    
+                <tr>
+                    <td>21</td>
+                    <td>カフェラリー新宿店</td>
+                    <td>新宿 カフェ</td>
+                    <td style="color:blue; text-decoration:underline;">https://www.google.com/maps/place/%E3%82%AB%E3%83%95%E3%82%A7%E3%83%A9%E3%83%AA%E3%83%BC%E6%96%B0%E5%AE%BF%E5%BA%97/data=!4m7!3m6!1s0x60188cd0dcdb2bd3:0x5c00c510fc989477!8m2!3d35.6918937!4d139.6988483!16s%2Fg%2F1v3hzzqd!19sChIJ0yvb3NCMGGARd5SY_BDFAFw?authuser=0&hl=ja&rclk=1</td>
+                </tr>
+    
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

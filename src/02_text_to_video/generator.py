@@ -44,11 +44,22 @@ def generate_video(text, title_color="#333333", bg_color="#ffffff", is_vertical=
     props_json = json.dumps(input_data)
     
     # Select composition based on format
-    comp_id = "HelloWorldVertical" if is_vertical else "HelloWorld"
+    # Select composition based on format
+    if is_vertical:
+        comp_id = "TerminalVertical" # Default to Terminal for now as it's the requested upgrade
+    else:
+        comp_id = "HelloWorld"
+        
     output_filename = "output_vertical.mp4" if is_vertical else "output_horizontal.mp4"
+    
+    # Calc duration based on text length (approx 10 chars per sec + buffer)
+    duration = max(150, len(text) * 2 + 60)
+    input_data["durationInFrames"] = duration
+    props_json = json.dumps(input_data)
+
     output_path = os.path.join(os.getcwd(), output_filename)
 
-    print(f"🎬 Rendering video ({comp_id}) with text: '{text}'...")
+    print(f"🎬 Rendering video ({comp_id}) with text length: {len(text)}...")
     
     cmd = [
         "npx", "remotion", "render",

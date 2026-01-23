@@ -1,5 +1,6 @@
 import { Composition, getInputProps } from 'remotion';
 import { MyComposition } from './Composition';
+import { TerminalComposition } from './TerminalComposition';
 import './style.css';
 
 // Default props that can be overridden by input.json
@@ -28,6 +29,15 @@ export const RemotionRoot: React.FC = () => {
             <Composition
                 id="HelloWorldVertical"
                 component={MyComposition}
+                durationInFrames={inputProps.durationInFrames}
+                fps={30}
+                width={1080}
+                height={1920}
+                defaultProps={defaultProps}
+            />
+            <Composition
+                id="TerminalVertical"
+                component={TerminalComposition}
                 durationInFrames={inputProps.durationInFrames}
                 fps={30}
                 width={1080}
