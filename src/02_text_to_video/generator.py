@@ -81,13 +81,34 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description="Generate text-to-video")
     parser.add_argument("--text", type=str, help="Text to display (use \\n for newlines)")
+    parser.add_argument("--props_file", type=str, help="Path to props json file")
     parser.add_argument("--bg", type=str, default="#ffffff", help="Background color hex")
     parser.add_argument("--vertical", action="store_true", help="Generate vertical video (9:16)")
     parser.add_argument("--interactive", action="store_true", help="Use interactive mode")
 
     args = parser.parse_args()
 
-    if args.interactive:
+    if args.props_file:
+        # Direct render with file
+        comp_id = "TerminalVertical" if args.vertical else "HelloWorld"
+        output_filename = "output_vertical.mp4" if args.vertical else "output_horizontal.mp4"
+        output_path = os.path.join(os.getcwd(), output_filename)
+        props_abs_path = os.path.abspath(args.props_file)
+        print(f"🎬 Rendering from file: {props_abs_path}")
+        cmd = [
+            "npx", "remotion", "render",
+            "src/index.ts",
+            comp_id,
+            output_path,
+            f"--props={props_abs_path}",
+            "--overwrite"
+        ]
+        try:
+            subprocess.check_call(cmd, cwd=REMOTION_APP_DIR, shell=True)
+            print(f"✅ Video saved to: {output_path}")
+        except subprocess.CalledProcessError as e:
+            print(f"❌ Rendering failed: {e}")
+    elif args.interactive:
         print("--- Text-to-Video Generator ---")
         user_text = input("Enter text (use \\n for new lines): ").replace("\\n", "\n")
         if not user_text:

@@ -39,6 +39,7 @@
 | 02 | [Text-to-Video Generator](./src/02_text_to_video/) | テキストを入力すると、アニメーション付きのショート動画（MP4）を自動生成します。(要Node.js) |
 | 03 | [Instagram Auto Liker](./src/03_instagram_auto_like/) | 指定したハッシュタグの投稿を自動で「いいね」します。Selenium使用。 |
 | 04 | [YouTube Transcriber](./src/04_youtube_transcriber/) | YouTube動画の字幕を抽出し、テキストファイルとして保存します。 |
+| 05 | [RSS Discord Bot](./src/05_rss_discord_bot/) | RSSフィードを24時間監視し、更新をDiscordに通知します。**VPS推奨**。 |
 
 ---
 

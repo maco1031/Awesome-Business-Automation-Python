@@ -1,0 +1,6 @@
+{
+    "text": "> nohup python bot.py &\n[1] 12345\n\n[2026-01-23 10:00:00] RSS Monitor Started\n[2026-01-23 10:10:00] Checking feed...\n[2026-01-23 10:20:00] Checking feed...\n[2026-01-23 10:20:01] 📰 New Article Found!\n✅ Sent to Discord\n[2026-01-23 10:30:00] Checking feed...\n...",
+    "titleColor": "#333333",
+    "bgColor": "#ffffff",
+    "durationInFrames": 600
+}
